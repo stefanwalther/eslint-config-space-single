@@ -1,19 +1,29 @@
 {
   "name": "eslint-config-sammler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sharable ESLint config, based on xo-space.",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "xo",
+    "xo-space",
+    "esnext"
+  ],
+  "author": {
+    "name": "Stefan Walther",
+    "url": "https://github.com/stefanwalther",
+    "twitter": "waltherstefan"
+  },
+  "files": [
+    "index.js",
+    "esnext.js"
+  ],
   "main": "index.js",
   "repository": "https://github.com/sammler/eslint-config-sammler",
-  "author": "Stefan Walther",
-  "license": "MIT",
   "dependencies": {
     "eslint-config-xo-space": "^0.15.0"
   },
   "devDependencies": {
     "eslint": "^3.13.1"
-  },
-  "files": [
-    "index.js",
-    "esnext.js"
-  ]
+  }
 }
