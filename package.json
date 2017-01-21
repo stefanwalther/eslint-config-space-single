@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sammler",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sharable ESLint config, based on xo-space.",
   "license": "MIT",
   "keywords": [
