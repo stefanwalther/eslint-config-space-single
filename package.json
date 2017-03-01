@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-space-single",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Sharable ESLint config, based on xo-space, but with some additional settings.",
   "license": "MIT",
   "keywords": [
