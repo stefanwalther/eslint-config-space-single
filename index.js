@@ -15,7 +15,8 @@ module.exports = {
 		"no-trailing-spaces": 0,
 		"no-param-reassign": 0,
 		"camelcase": 0,
-		"padded-blocks": 0
+		"padded-blocks": 0,
+		"no-warning-comments": 0
 	},
 	"parserOptions": {
 		"sourceType": 'module',
