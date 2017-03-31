@@ -1,10 +1,11 @@
 'use strict';
 
 module.exports = {
-	extends: 'xo-space',
+	extends: 'xo-space/browser',
 	env: {
-		node: true,
-		es6: false
+		node: false,
+		es6: false,
+		browser: true
 	},
 	rules: {
 		"quotes": [2, 'single'],

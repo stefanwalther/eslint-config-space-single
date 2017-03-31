@@ -1,14 +1,13 @@
 {
   "name": "eslint-config-space-single",
-  "version": "0.0.6",
-  "description": "Sharable ESLint config, based on xo-space, but with some additional settings.",
-  "license": "MIT",
+  "version": "0.0.7",
+  "description": "Sharable ESLint config, based on xo-space, but with single quotes + some additional settings.",
   "keywords": [
     "eslint",
     "xo",
-    "xo-space",
-    "esnext"
+    "xo-space"
   ],
+  "license": "MIT",
   "author": {
     "name": "Stefan Walther",
     "url": "https://github.com/stefanwalther",
@@ -20,10 +19,39 @@
   ],
   "main": "index.js",
   "repository": "https://github.com/stefanwalther/eslint-config-space-single",
+  "scripts": {
+    "docs": "verb",
+    "test": "mocha './test/**/*.spec.js' --require './test/mocha.conf.js'"
+  },
   "dependencies": {
     "eslint-config-xo-space": "^0.16.0"
   },
   "devDependencies": {
-    "eslint": "^3.13.1"
+    "chai": "^3.5.0",
+    "eslint": "^3.13.1",
+    "is-plain-obj": "^1.1.0",
+    "mocha": "^3.2.0",
+    "temp-write": "^3.2.0"
+  },
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": []
+    },
+    "lint": {
+      "reflinks": true
+    },
+    "reflinks": [
+      "verb",
+      "verb-readme-generator"
+    ]
   }
 }
