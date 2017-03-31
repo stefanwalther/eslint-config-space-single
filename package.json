@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-space-single",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Sharable ESLint config, based on xo-space, but with some additional settings.",
   "license": "MIT",
   "keywords": [
@@ -21,7 +21,7 @@
   "main": "index.js",
   "repository": "https://github.com/stefanwalther/eslint-config-space-single",
   "dependencies": {
-    "eslint-config-xo-space": "^0.15.0"
+    "eslint-config-xo-space": "^0.16.0"
   },
   "devDependencies": {
     "eslint": "^3.13.1"
