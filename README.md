@@ -47,6 +47,13 @@ And [`eslint-config-space-single/browser`](browser.js) if you're in the browser:
 }
 ```
 
+## Related Projects
+
+- [eslint-config-xo-space](https://www.npmjs.com/package/eslint-config-xo-space): ESLint shareable config for XO with 2-space indent | [homepage](https://github.com/sindresorhus/eslint-config-xo-space#readme "ESLint shareable config for XO with 2-space indent")
+- [eslint](https://www.npmjs.com/package/eslint): An AST-based pattern checker for JavaScript. | [homepage](http://eslint.org "An AST-based pattern checker for JavaScript.")
+
+## About
+
 ### Author
 
 **Stefan Walther**

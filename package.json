@@ -44,7 +44,10 @@
       "gulp-format-md"
     ],
     "related": {
-      "list": []
+      "list": [
+        "eslint",
+        "eslint-config-xo-space"
+      ]
     },
     "lint": {
       "reflinks": true
