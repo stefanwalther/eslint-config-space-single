@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-space-single",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Sharable ESLint config, based on xo-space, but with single quotes + some additional settings.",
   "keywords": [
     "eslint",
@@ -15,7 +15,8 @@
   },
   "files": [
     "index.js",
-    "esnext.js"
+    "esnext.js",
+    "browser.js"
   ],
   "main": "index.js",
   "repository": "https://github.com/stefanwalther/eslint-config-space-single",
