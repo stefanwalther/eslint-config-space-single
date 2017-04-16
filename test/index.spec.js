@@ -13,7 +13,7 @@ function runEslint(str, conf) {
 }
 
 describe('main', () => {
-	it('', () => {
+	it('is setup correctly', () => {
 		const conf = require('../');
 		expect(isPlainObj(conf)).to.be.true;
 		expect(isPlainObj(conf.rules)).to.be.true;
@@ -22,7 +22,7 @@ describe('main', () => {
 });
 
 describe('browser', () => {
-	it('', () => {
+	it('is setup correctly', () => {
 		const conf = require('../browser');
 		expect(isPlainObj(conf)).to.be.true;
 		expect(isPlainObj(conf.rules)).to.be.true;
@@ -31,7 +31,7 @@ describe('browser', () => {
 });
 
 describe('esnext', () => {
-	it('', () => {
+	it('is setup correctly', () => {
 		const conf = require('../esnext');
 		expect(isPlainObj(conf)).to.be.true;
 		expect(isPlainObj(conf.rules)).to.be.true;
