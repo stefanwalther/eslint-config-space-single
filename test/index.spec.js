@@ -12,12 +12,15 @@ function runEslint(str, conf) {
 	return linter.executeOnText(str).results[0].messages;
 }
 
-describe('main', () => {
+describe('main (default)', () => {
 	it('is setup correctly', () => {
 		const conf = require('../');
 		expect(isPlainObj(conf)).to.be.true;
 		expect(isPlainObj(conf.rules)).to.be.true;
 		expect(runEslint(fixture, conf).length).to.be.equal(0);
+    expect(conf.env.node).to.be.true;
+    expect(conf.env.browser).to.be.false;
+    expect(conf.env.es6).to.be.false;
 	});
 });
 
@@ -27,6 +30,9 @@ describe('browser', () => {
 		expect(isPlainObj(conf)).to.be.true;
 		expect(isPlainObj(conf.rules)).to.be.true;
 		expect(runEslint(fixture, conf).length).to.be.equal(0);
+    expect(conf.env.browser).to.be.true;
+    expect(conf.env.es6).to.be.false;
+    expect(conf.env.node).to.be.false;
 	});
 });
 
@@ -38,6 +44,6 @@ describe('esnext', () => {
 		expect(runEslint(fixture, conf).length).to.be.equal(0);
 		expect(conf.env.node).to.be.true;
 		expect(conf.env.es6).to.be.true;
-		expect(conf.env.browser).to.not.exist;
+		expect(conf.env.browser).to.be.false;
 	});
 });

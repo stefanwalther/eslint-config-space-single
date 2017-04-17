@@ -2,7 +2,8 @@ module.exports = {
   extends: 'xo-space',
   env: {
     node: true,
-    es6: false
+    es6: false,
+    browser: false
   },
   rules: {
     "quotes": [2, 'single'],
