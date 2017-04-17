@@ -53,14 +53,15 @@ And [`eslint-config-space-single/browser`](browser.js) if you're in the browser:
 
 Here are some package.json snippets I use to harmonize handling of eslinting across projects:
 
-```
+```sh
+"scripts": {
   "lint": "eslint src && eslint test",
   "lint:fix": "eslint src --fix && eslint test --fix",
   "lint:src": "eslint src",
   "lint:src:fix": "eslint src --fix",
   "lint:test": "eslint test",
   "lint:text:fix": "eslint test --fix"
-
+}
 ```
 
 Then just run e.g. `yarn lint:src:fix` or `npm run lint:src:fix`.
