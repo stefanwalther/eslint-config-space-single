@@ -47,6 +47,24 @@ And [`eslint-config-space-single/browser`](browser.js) if you're in the browser:
 }
 ```
 
+## Some Helpers
+
+### package.json scripts
+
+Here are some package.json snippets I use to harmonize handling of eslinting across projects:
+
+```
+  "lint": "eslint src && eslint test",
+  "lint:fix": "eslint src --fix && eslint test --fix",
+  "lint:src": "eslint src",
+  "lint:src:fix": "eslint src --fix",
+  "lint:test": "eslint test",
+  "lint:text:fix": "eslint test --fix"
+
+```
+
+Then just run e.g. `yarn lint:src:fix` or `npm run lint:src:fix`.
+
 ## Related Projects
 
 - [eslint-config-xo-space](https://www.npmjs.com/package/eslint-config-xo-space): ESLint shareable config for XO with 2-space indent | [homepage](https://github.com/sindresorhus/eslint-config-xo-space#readme "ESLint shareable config for XO with 2-space indent")

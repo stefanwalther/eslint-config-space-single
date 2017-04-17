@@ -22,7 +22,8 @@
   "repository": "https://github.com/stefanwalther/eslint-config-space-single",
   "scripts": {
     "docs": "verb",
-    "test": "mocha './test/**/*.spec.js' --require './test/mocha.conf.js'"
+    "test": "mocha './test/**/*.spec.js' --require './test/mocha.conf.js'",
+    "lint:src": "eslint src"
   },
   "dependencies": {
     "eslint-config-xo-space": "^0.16.0"
