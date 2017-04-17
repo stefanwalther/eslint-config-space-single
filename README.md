@@ -12,20 +12,20 @@ $npm install --save-dev eslint-config-space-single
 
 Add some ESLint config to your `package.json`:
 
-```js
+```json
 {
-	"name": "my-awesome-project",
-	"eslintConfig": {
-		"extends": "eslint-config-space-single"
-	}
+  "name": "my-awesome-project",
+  "eslintConfig": {
+    "extends": "eslint-config-space-single"
+  }
 }
 ```
 
 Or to `.eslintrc`:
 
-```js
+```json
 {
-	"extends": "eslint-config-space-single"
+  "extends": "eslint-config-space-single"
 }
 ```
 
@@ -35,7 +35,7 @@ This package also exposes [`eslint-config-space-single/esnext`](esnext.js) if yo
 
 ```json
 {
-	"extends": "eslint-config-space-single/esnext"
+  "extends": "eslint-config-space-single/esnext"
 }
 ```
 
@@ -43,7 +43,7 @@ And [`eslint-config-space-single/browser`](browser.js) if you're in the browser:
 
 ```json
 {
-	"extends": "eslint-config-space-single/browser"
+  "extends": "eslint-config-space-single/browser"
 }
 ```
 
