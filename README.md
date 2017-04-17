@@ -12,7 +12,7 @@ $npm install --save-dev eslint-config-space-single
 
 Add some ESLint config to your `package.json`:
 
-```json
+```js
 {
 	"name": "my-awesome-project",
 	"eslintConfig": {
@@ -23,7 +23,7 @@ Add some ESLint config to your `package.json`:
 
 Or to `.eslintrc`:
 
-```json
+```js
 {
 	"extends": "eslint-config-space-single"
 }
