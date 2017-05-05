@@ -47,3 +47,15 @@ describe('esnext', () => {
 		expect(conf.env.browser).to.be.false;
 	});
 });
+
+describe('test', () => {
+  it('is setup correctly', () => {
+    const conf = require('../test');
+    expect(isPlainObj(conf)).to.be.true;
+    expect(isPlainObj(conf.rules)).to.be.true;
+    expect(runEslint(fixture, conf).length).to.be.equal(0);
+    expect(conf.env.node).to.be.true;
+    expect(conf.env.es6).to.be.true;
+    expect(conf.env.browser).to.be.false;
+  });
+});
