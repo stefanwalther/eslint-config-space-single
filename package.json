@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-space-single",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Sharable ESLint config, based on xo-space, but with single quotes + some additional settings.",
   "keywords": [
     "eslint",
@@ -27,16 +27,16 @@
     "test-coverage": "istanbul cover node_modules/.bin/_mocha  --require ./test/mocha.conf.js -- -- -u exports -R spec test/**/* && codecov"
   },
   "dependencies": {
-    "eslint-config-xo-space": "^0.16.0",
+    "eslint-config-xo-space": "^0.17.0",
     "eslint-plugin-mocha": "^4.11.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "codecov": "^2.3.1",
-    "eslint": "^3.19.0",
+    "chai": "^4.1.2",
+    "codecov": "^3.0.0",
+    "eslint": "^4.10.0",
     "is-plain-obj": "^1.1.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.5.3",
+    "mocha": "^4.0.1",
     "temp-write": "^3.3.0"
   },
   "verb": {
