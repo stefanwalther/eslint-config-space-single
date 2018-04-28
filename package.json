@@ -32,13 +32,13 @@
     "eslint-plugin-mocha": "5.0.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "codecov": "^3.0.1",
-    "eslint": "^4.19.1",
-    "is-plain-obj": "^1.1.0",
-    "istanbul": "^0.4.5",
+    "chai": "4.1.2",
+    "codecov": "3.0.1",
+    "eslint": "4.19.1",
+    "is-plain-obj": "1.1.0",
+    "istanbul": "0.4.5",
     "mocha": "5.1.1",
-    "temp-write": "^3.4.0"
+    "temp-write": "3.4.0"
   },
   "verb": {
     "run": true,
