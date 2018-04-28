@@ -6,7 +6,6 @@
 [![David](https://img.shields.io/david/stefanwalther/eslint-config-space-single.svg)](https://github.com/stefanwalther/eslint-config-space-single)
 [![CircleCI](https://img.shields.io/circleci/project/github/stefanwalther/eslint-config-space-single.svg)](https://circleci.com/gh/stefanwalther/eslint-config-space-single/tree/master)
 [![codecov](https://codecov.io/gh/stefanwalther/eslint-config-space-single/branch/master/graph/badge.svg)](https://codecov.io/gh/stefanwalther/eslint-config-space-single)
-[![Greenkeeper badge](https://badges.greenkeeper.io/stefanwalther/eslint-config-space-single.svg)](https://greenkeeper.io/)
 [![XO code style](https://img.shields.io/badge/code_style-XO--space-5ed9c7.svg)](https://github.com/sindresorhus/eslint-config-xo-space)
 
 ## Install
@@ -83,8 +82,8 @@ Then just run e.g. `yarn lint:src:fix` or `npm run lint:src:fix`.
 
 ## Related Projects
 
-- [eslint-config-xo-space](https://www.npmjs.com/package/eslint-config-xo-space): ESLint shareable config for XO with 2-space indent | [homepage](https://github.com/sindresorhus/eslint-config-xo-space#readme "ESLint shareable config for XO with 2-space indent")
-- [eslint](https://www.npmjs.com/package/eslint): An AST-based pattern checker for JavaScript. | [homepage](http://eslint.org "An AST-based pattern checker for JavaScript.")
+- [eslint-config-xo-space](https://www.npmjs.com/package/eslint-config-xo-space): ESLint shareable config for XO with 2-space indent | [homepage](https://github.com/xojs/eslint-config-xo-space#readme "ESLint shareable config for XO with 2-space indent")
+- [eslint](https://www.npmjs.com/package/eslint): An AST-based pattern checker for JavaScript. | [homepage](https://eslint.org "An AST-based pattern checker for JavaScript.")
 
 ## About
 

@@ -22,7 +22,7 @@
   "main": "index.js",
   "repository": "https://github.com/stefanwalther/eslint-config-space-single",
   "scripts": {
-    "docs": "verb",
+    "docs": "docker run --rm -v ${PWD}:/opt/verb stefanwalther/verb",
     "test": "mocha './test/**/*.spec.js' --require './test/mocha.conf.js'",
     "lint:src": "eslint src",
     "test-coverage": "istanbul cover node_modules/.bin/_mocha  --require ./test/mocha.conf.js -- -- -u exports -R spec test/**/* && codecov"
