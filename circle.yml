@@ -1,6 +1,6 @@
 machine:
   node:
-    version: 6.0
+    version: 8
   environment:
       PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
 
@@ -12,9 +12,6 @@ dependencies:
 
 test:
   override:
-    - nvm use 6.0; yarn run test
-    - nvm use 7.0; yarn run test
-    - nvm use 7.2; yarn run test
     - nvm use 8.6.0; yarn run test
     - nvm use latest; yarn run test-coverage
   post:
