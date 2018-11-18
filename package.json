@@ -14,27 +14,32 @@
     "twitter": "waltherstefan"
   },
   "files": [
-    "index.js",
-    "esnext.js",
-    "browser.js",
-    "test.js"
+    "src/index.js",
+    "src/esnext.js",
+    "src/browser.js",
+    "src/test.js"
   ],
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/stefanwalther/eslint-config-space-single",
   "scripts": {
     "docs": "docker run --rm -v ${PWD}:/opt/verb stefanwalther/verb",
     "test": "mocha './test/**/*.spec.js' --require './test/mocha.conf.js'",
-    "lint:src": "eslint src",
+    "lint": "eslint src && eslint test",
+    "lint:fix": "eslint src --fix && eslint test --fix",
+    "lint:src": "eslint",
+    "lint:src:fix": "eslint src --fix",
+    "lint:test": "eslint test",
+    "lint:test:fix": "eslint test --fix",
     "test-coverage": "istanbul cover node_modules/.bin/_mocha  --require ./test/mocha.conf.js -- -- -u exports -R spec test/**/* && codecov"
   },
   "dependencies": {
-    "eslint-config-xo-space": "0.19.0",
-    "eslint-plugin-mocha": "5.2.0"
+    "eslint-config-xo-space": "0.20.0"
   },
   "devDependencies": {
-    "chai": "4.1.2",
-    "codecov": "3.0.4",
-    "eslint": "5.4.0",
+    "chai": "4.2.0",
+    "codecov": "3.1.0",
+    "eslint": "5.9.0",
+    "eslint-plugin-mocha": "^5.2.0",
     "is-plain-obj": "1.1.0",
     "istanbul": "0.4.5",
     "mocha": "5.2.0",

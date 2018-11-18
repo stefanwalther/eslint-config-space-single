@@ -1,7 +1,27 @@
-node_modules
-coverage
+# =========================
+# Project specific
+# =========================
+coverage/
+
+# =========================
+# IDEs
+# =========================
+
+# IntelliJ / Webstorm
+.idea/
+
+# Visual Code
+.vscode/
+
+# =========================
+# node.js
+# =========================
+node_modules/
 package-lock.json
 
-.vscode
-.idea
-
+# =========================
+# npm
+# =========================
+package-lock.json
+npm-debug.log
+*/.npm
