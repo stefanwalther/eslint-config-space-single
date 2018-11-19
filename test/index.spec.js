@@ -26,7 +26,7 @@ describe('main (default)', () => {
 
 describe('browser', () => {
   it('is setup correctly', () => {
-    const conf = require('../src/browser');
+    const conf = require('../browser');
     expect(isPlainObj(conf)).to.be.true;
     expect(isPlainObj(conf.rules)).to.be.true;
     expect(runEslint(fixture, conf).length).to.be.equal(0);
@@ -38,7 +38,7 @@ describe('browser', () => {
 
 describe('esnext', () => {
   it('is setup correctly', () => {
-    const conf = require('../src/esnext');
+    const conf = require('../esnext');
     expect(isPlainObj(conf)).to.be.true;
     expect(isPlainObj(conf.rules)).to.be.true;
     expect(runEslint(fixture, conf).length).to.be.equal(0);
@@ -50,7 +50,7 @@ describe('esnext', () => {
 
 describe('test', () => {
   it('is setup correctly', () => {
-    const conf = require('../src/test');
+    const conf = require('../test');
     expect(isPlainObj(conf)).to.be.true;
     expect(isPlainObj(conf.rules)).to.be.true;
     expect(runEslint(fixture, conf).length).to.be.equal(0);

@@ -37,7 +37,7 @@ Or to `.eslintrc`:
 
 Supports parsing ES6+, but this is not the default.
 
-This package also exposes [`eslint-config-space-single/esnext`](src/esnext.js) if you want ES6+ rules:
+This package also exposes [`eslint-config-space-single/esnext`](esnext.js) if you want ES6+ rules:
 
 ```json
 {
@@ -45,7 +45,7 @@ This package also exposes [`eslint-config-space-single/esnext`](src/esnext.js) i
 }
 ```
 
-And [`eslint-config-space-single/browser`](src/browser.js) if you're in the browser:
+And [`eslint-config-space-single/browser`](browser.js) if you're in the browser:
 
 ```json
 {
@@ -53,7 +53,7 @@ And [`eslint-config-space-single/browser`](src/browser.js) if you're in the brow
 }
 ```
 
-[Test configuration](src/test.js):
+[Test configuration](test.js):
 
 ```json
 {

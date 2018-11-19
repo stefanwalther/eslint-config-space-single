@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-space-single",
-  "version": "0.3.7",
+  "version": "0.3.9",
   "description": "Sharable ESLint config, based on xo-space, but with single quotes + some additional settings.",
   "keywords": [
     "eslint",
@@ -15,19 +15,19 @@
   },
   "files": [
     "src/index.js",
-    "src/esnext.js",
-    "src/browser.js",
-    "src/test.js"
+    "esnext.js",
+    "browser.js",
+    "test.js"
   ],
   "main": "src/index.js",
   "repository": "https://github.com/stefanwalther/eslint-config-space-single",
   "scripts": {
     "docs": "docker run --rm -v ${PWD}:/opt/verb stefanwalther/verb",
     "test": "mocha './test/**/*.spec.js' --require './test/mocha.conf.js'",
-    "lint": "eslint src && eslint test",
-    "lint:fix": "eslint src --fix && eslint test --fix",
-    "lint:src": "eslint",
-    "lint:src:fix": "eslint src --fix",
+    "lint": "eslint ./*.js && eslint test",
+    "lint:fix": "eslint ./*.js --fix && eslint test --fix",
+    "lint:src": "eslint ./*.js",
+    "lint:src:fix": "eslint ./*.js --fix",
     "lint:test": "eslint test",
     "lint:test:fix": "eslint test --fix",
     "coverage": "istanbul cover node_modules/.bin/_mocha  --require ./test/mocha.conf.js -- -- -u exports -R spec test/**/* && codecov"
