@@ -6,9 +6,9 @@ module.exports = {
     browser: false
   },
   rules: {
-    quotes: [2, "single"],
+    quotes: ["error", "single", {"allowTemplateLiterals": true}],
     "no-console": 0,
-    "one-var": [2, "never"],
+    "one-var": ["error", "never"],
     "no-underscore-dangle": 0,
     "class-methods-use-this": 0,
     "no-trailing-spaces": 0,
