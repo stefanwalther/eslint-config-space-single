@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-space-single",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "description": "Sharable ESLint config, based on xo-space, but with single quotes + some additional settings.",
   "keywords": [
     "eslint",
